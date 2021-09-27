@@ -53,9 +53,12 @@ class App extends React.Component {
     //3. find the item that I clicked on
     //4. flip the value of purchased for that item
     //5. leave all the other items alone.
-    
-    this.setState({
 
+    this.setState({
+      ...this.state,
+      groceries: groceries.map(item=> {
+        return (item);
+      })
     });
   }
   //Add Item
