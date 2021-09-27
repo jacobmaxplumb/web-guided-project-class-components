@@ -98,7 +98,7 @@ class App extends React.Component {
       <div className="App">
         <div className="header">
            <h1>Shopping List</h1>
-           <ListForm handleAddItem={this.handleAddItem} setState={this.setState}/>
+           <ListForm handleAddItem={this.handleAddItem} setState={this.setState} groceries={this.state.groceries}/>
          </div>
         <GroceryList handleClear={this.handleClear} handleToggle={this.handleToggle} groceries={this.state.groceries} />
        </div>
