@@ -16,6 +16,8 @@ const Item = props => {
     });
   }
 
+  console.log(props);
+  
   return (
     <div onClick={handleClick}className={`item${item.purchased ? ' purchased' : ''}`}>
       <p>{item.name}</p>
