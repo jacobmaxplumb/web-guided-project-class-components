@@ -74,6 +74,7 @@ class App extends React.Component {
     const newItem = {
       name: "grocery",
       id: Date.now(),
+      purchased: false
     }
 
     this.setState({
