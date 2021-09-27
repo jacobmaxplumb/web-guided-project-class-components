@@ -85,7 +85,10 @@ class App extends React.Component {
 
   //Clear Purchased Items
   handleClear = ()=> {
-    
+    this.setState({
+      ...this.state,
+      groceries:this.state.groceries
+    });
   }
 
   render() {
