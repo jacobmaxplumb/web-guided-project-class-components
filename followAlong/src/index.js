@@ -88,7 +88,7 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries:this.state.groceries.filter(item => {
-        return(false);
+        return(item.purchased === false);
       })
     });
   }
