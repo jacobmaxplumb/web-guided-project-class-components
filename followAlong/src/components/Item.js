@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Item = props => {
+  const [item, setItem ] = useState({
+    
+  });
+
   const handleClick = ()=> {
     console.log("Clicked item ", props.item.name);
   }
