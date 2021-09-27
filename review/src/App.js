@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const App = () => {
-  const name = "Chris";
-  
+  const [state, setState] = useState({
+    name: "Warren",
+    age: 33
+  });
+
   return (
     <div>
       <h1>Hello {name}</h1>
