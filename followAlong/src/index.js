@@ -71,9 +71,14 @@ class App extends React.Component {
 
   //Add Item
   handleAddItem = ()=> {
+    const newItem = {
+      name: "grocery",
+      id: Date.now(),
+    }
+
     this.setState({
       ...this.state,
-      groceries:
+      groceries: [...this.state.groceries, newItem]
     });
   }
 
