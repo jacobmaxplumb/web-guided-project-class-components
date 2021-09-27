@@ -72,7 +72,7 @@ class App extends React.Component {
   //Add Item
   handleAddItem = (name)=> {
     const newItem = {
-      name: "grocery",
+      name: name,
       id: Date.now(),
       purchased: false
     }
