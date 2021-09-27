@@ -3,7 +3,10 @@ import React from "react";
 import Item from "./Item";
 
 const GroceryList = props => {
-  
+  const handleClick = ()=> {
+    
+  }
+
   return (
     <div className="shopping-list">
       {props.groceries.map(item => (

@@ -84,6 +84,9 @@ class App extends React.Component {
   }
 
   //Clear Purchased Items
+  handleClear = ()=> {
+    console.log("clicked in App");
+  }
 
   render() {
     return (
