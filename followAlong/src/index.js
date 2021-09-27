@@ -73,7 +73,7 @@ class App extends React.Component {
   handleAddItem = ()=> {
     this.setState({
       ...this.state,
-      groceries;
+      groceries:
     });
   }
 
