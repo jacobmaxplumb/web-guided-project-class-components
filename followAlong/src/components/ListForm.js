@@ -11,15 +11,14 @@ class ListForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.handleAddItem();
-    console.log(this.props);
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
         <input type="text" name="item" />
-        <button onClick={this.handleSubmit}>Add</button>
+        <button>Add</button>
       </form>
     );
   }
