@@ -15,7 +15,8 @@ class App2 extends React.Component {
             <button onClick={()=>{
                 this.setState({
                     ...this.state,
-                    name:"Allison"
+                    name:"Allison",
+                    age:12
                 });
             }}>Change Name</button>
         </div>);
