@@ -8,7 +8,8 @@ const Item = props => {
   });
 
   const handleClick = ()=> {
-    console.log("Clicked item ", item.name);
+    // console.log("Clicked item ", item.name);
+
   }
 
   return (
