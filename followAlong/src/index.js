@@ -48,7 +48,15 @@ class App extends React.Component {
 
   //Toggle Item Purchased
   handleToggle = () => {
-    console.log("Clicked handleToggle in App");
+    //1. have a copy of state.
+    //2. set groceries slice of state
+    //3. find the item that I clicked on
+    //4. flip the value of purchased for that item
+    //5. leave all the other items alone.
+    
+    this.setState({
+
+    });
   }
   //Add Item
   //Clear Purchased Items
