@@ -13,7 +13,10 @@ class App2 extends React.Component {
         return(<div>
             <h1>Hello {this.state.name}. You are {this.state.age} years old.</h1>
             <button onClick={()=>{
-                this.setState();
+                this.setState({
+                    ...this.state,
+                    name:"Allison"
+                });
             }}>Change Name</button>
         </div>);
     }
