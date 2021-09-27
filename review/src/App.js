@@ -10,7 +10,11 @@ const App = () => {
     <div>
       <h1>Hello {state.name}. You are {state.age} years old.</h1>
       <button onClick={()=>{
-        
+        setState({
+          ...state,
+          name: "Allison",
+          age: 12
+        })
       }}>Change Name</button>
     </div>
   );
