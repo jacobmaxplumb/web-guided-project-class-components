@@ -17,6 +17,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello {state.name}. You are {state.age} years old.</h1>
+      <p>{state.name} is a fantastic name. Never change it!!</p>
       <button onClick={handleClick}>Change Name</button>
     </div>
   );
