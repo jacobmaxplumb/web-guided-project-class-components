@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Item = props => {
-  const [item, setItem ] = useState({
+  const [ item, setItem ] = useState({
     name: 'Bananas',
     id: 123,
     purchased: false
@@ -9,7 +9,11 @@ const Item = props => {
 
   const handleClick = ()=> {
     // console.log("Clicked item ", item.name);
-
+    //How do we set purchased to true?
+    setItem({
+      ...item,
+      purchased: true
+    });
   }
 
   return (
