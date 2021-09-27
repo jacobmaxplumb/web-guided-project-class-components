@@ -1,10 +1,10 @@
 import React from 'react';
 
 class App2 extends React.Component {
-    const name = "Allison";
-    
+
     render() {
-        
+        const name = "Allison";
+        console.log("This thing");
 
         return(<div>
             <h1>Hello {name}.</h1>
