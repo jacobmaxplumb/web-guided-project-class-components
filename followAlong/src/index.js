@@ -71,7 +71,10 @@ class App extends React.Component {
 
   //Add Item
   handleAddItem = ()=> {
-    console.log("Clicked add Item");
+    this.setState({
+      ...this.state,
+      groceries;
+    });
   }
 
   //Clear Purchased Items
