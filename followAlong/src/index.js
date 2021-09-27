@@ -47,7 +47,7 @@ class App extends React.Component {
   }
 
   //Toggle Item Purchased
-  handleToggle = () => {
+  handleToggle = (id) => {
     //1. have a copy of state.
     //2. set groceries slice of state
     //3. find the item that I clicked on
@@ -57,13 +57,13 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: groceries.map(item=> {
-        if (item.id === 123) {
+        if (item.id === id) {
           return ({
             ...item,
             purchased: !item.purchased
           });
         }
-        
+
         return item;
       })
     });
