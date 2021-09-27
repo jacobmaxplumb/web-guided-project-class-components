@@ -84,11 +84,11 @@ class App extends React.Component {
   }
 
   //Clear Purchased Items
-  handleClear = ()=> {
+  handleClear = () => {
     this.setState({
       ...this.state,
       groceries:this.state.groceries.filter(item => {
-        return(item.purchased === false);
+        return(!item.purchased);
       })
     });
   }
