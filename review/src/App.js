@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
 const Person = (props)=> {
-  console.log(props);
   return(<div>
-    <h1>Hello {state.name}. You are {state.age} years old.</h1>
-    <p>{state.name} is a fantastic name. Never change it!!</p>
+    <h1>Hello {props.name}. You are {props.age} years old.</h1>
+    <p>{props.name} is a fantastic name. Never change it!!</p>
   </div>);
 }
 
@@ -24,7 +23,7 @@ const App = () => {
 
   return (
     <div>
-      <Person state={state}/>
+      <Person name={state.name} age={state.age}/>
       <button onClick={handleClick}>Change Name</button>
     </div>
   );
