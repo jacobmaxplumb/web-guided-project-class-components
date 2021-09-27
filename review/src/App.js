@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello {state.name}. You are {state.age} years old.</h1>
+      <button>Change Name</button>
     </div>
   );
 };
