@@ -87,7 +87,9 @@ class App extends React.Component {
   handleClear = ()=> {
     this.setState({
       ...this.state,
-      groceries:this.state.groceries
+      groceries:this.state.groceries.filter(item => {
+        return(false);
+      })
     });
   }
 
