@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 
+const Person = ()=> {
+  return(<div>
+    <h1>Hello {state.name}. You are {state.age} years old.</h1>
+    <p>{state.name} is a fantastic name. Never change it!!</p>
+  </div>);
+}
+
 const App = () => {
   const [state, setState] = useState({
     name: "Warren",
@@ -16,8 +23,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello {state.name}. You are {state.age} years old.</h1>
-      <p>{state.name} is a fantastic name. Never change it!!</p>
+      <Person/>
       <button onClick={handleClick}>Change Name</button>
     </div>
   );
