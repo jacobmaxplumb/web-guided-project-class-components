@@ -11,7 +11,9 @@ class ListForm extends React.Component {
 
   handleChanges = e => {
     // update state with each keystroke
-    console.log(e.target.value);
+    this.setState({
+      input:e.target.value
+    });
   };
 
   // class property to submit form
@@ -21,6 +23,7 @@ class ListForm extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <form onSubmit={this.handleSubmit}>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
