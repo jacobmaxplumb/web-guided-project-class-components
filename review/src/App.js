@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const Person = ()=> {
+const Person = (props)=> {
+  console.log(props);
   return(<div>
     <h1>Hello {state.name}. You are {state.age} years old.</h1>
     <p>{state.name} is a fantastic name. Never change it!!</p>
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <Person/>
+      <Person state={state}/>
       <button onClick={handleClick}>Change Name</button>
     </div>
   );
