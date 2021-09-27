@@ -85,7 +85,7 @@ class App extends React.Component {
 
   //Clear Purchased Items
   handleClear = ()=> {
-    console.log("clicked in App");
+    
   }
 
   render() {
@@ -95,7 +95,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm handleAddItem={this.handleAddItem}/>
          </div>
-        <GroceryList handleToggle={this.handleToggle} groceries={this.state.groceries} />
+        <GroceryList handleClear={this.handleClear} handleToggle={this.handleToggle} groceries={this.state.groceries} />
        </div>
     );
   }
