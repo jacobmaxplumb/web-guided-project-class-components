@@ -15,6 +15,8 @@ const Item = props => {
     //   ...item,
     //   purchased: !item.purchased
     // });
+    console.log(props.item);
+
     props.handleToggle();
   }
 
