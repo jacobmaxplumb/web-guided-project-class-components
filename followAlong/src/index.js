@@ -47,6 +47,9 @@ class App extends React.Component {
   }
 
   //Toggle Item Purchased
+  handleToggle = () => {
+    console.log("Clicked handleToggle in App");
+  }
   //Add Item
   //Clear Purchased Items
 
