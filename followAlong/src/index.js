@@ -46,6 +46,10 @@ class App extends React.Component {
     }
   }
 
+  //Toggle Item Purchased
+  //Add Item
+  //Clear Purchased Items
+
   render() {
     return (
       <div className="App">
