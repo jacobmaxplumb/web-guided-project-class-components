@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState }from "react";
 
 class ListForm extends React.Component {
   // Constructor with state
+  constructor(){
+    super();
+    this.state = {
+      input: ""
+    }
+  }
 
   handleChanges = e => {
     // update state with each keystroke
