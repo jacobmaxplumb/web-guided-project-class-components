@@ -9,7 +9,12 @@ import React from 'react';
 // }
 
 class Person extends React.Component {
-    
+    render() {
+        return(<div>
+            <h1>Hello {this.props.name}. You are {this.props.age} years old.</h1>
+            <p>{this.props.name} is a great name!</p>
+        </div>);
+    }
 }
 
 class App2 extends React.Component {
