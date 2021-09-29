@@ -46,7 +46,8 @@ class App extends React.Component {
     }
   }
 
-  clearItems() {
+  clearItems = () => {
+    const newItem = {id: 1, name: 'something', purchased: false};
     this.setState({groceries: []});
   }
 
