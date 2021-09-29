@@ -19,3 +19,17 @@ const Item = props => {
 // }
 
 export default Item;
+
+// function main() {
+//   const obj = {
+//     name: 'jacob',
+//     age: 30
+//   }
+
+//   const obj2 = changeData(obj);
+
+// }
+
+// function changeData(data) {
+//   data.name = 'james'
+// }
