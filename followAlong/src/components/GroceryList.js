@@ -3,6 +3,9 @@ import React from "react";
 import Item from "./Item";
 
 const GroceryList = props => {
+  const handleClear = () => {
+    props.clearItems();
+  }
   // for sorting the list based on whether an item has been purchased or not
   // const sortedList = props.groceries.sort((a, b) => a.purchased - b.purchased);
   return (
@@ -10,7 +13,7 @@ const GroceryList = props => {
       {props.groceries.map(item => (
         <Item key={item.id} item={item} />
       ))}
-      <button className="clear-btn">
+      <button className="clear-btn" onClick={props.clearItems}>
         Clear Purchased
       </button>
     </div>

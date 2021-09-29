@@ -39,15 +39,40 @@ const groceries = [
 ];
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      groceries
+    }
+  }
+
+  clearItems() {
+    this.setState({groceries: []});
+  }
+
+  toggleItem = itemId => {
+    console.log(itemId);
+  }
+
+  addItem = (e, item) => {
+    e.preventDefault();
+    const newItem = {
+      name: item,
+      id: Date.now(),
+      purchased: false
+    }
+    this.setState({groceries: [...this.state.groceries, newItem]})
+  }
+
   // Class methods to update state
   render() {
     return (
       <div className="App">
         <div className="header">
            <h1>Shopping List</h1>
-           <ListForm />
+           <ListForm test={'test'} addItem={this.addItem} />
          </div>
-        <GroceryList groceries={groceries} />
+        <GroceryList clearItems={this.clearItems} groceries={this.state.groceries} />
        </div>
     );
   }
